@@ -16,7 +16,7 @@ O `tesseract OCR` é um reconhecedor óptico de caracteres (OCR) de código aber
 
 ### `gImageReader`
 
-O `gImageReader` é uma aplicação de código aberto que oferece uma interface amigável para a extração de texto de imagens ou arquivos `.pdf`. Ele utiliza tecnologias de reconhecimento óptico de caracteres (OCR) para digitalizar documentos e converter o texto contido neles em formato editável. Com recursos como suporte a vários idiomas e opções de formatação, o gImageReader é uma ferramenta útil para transformar documentos digitalizados em texto pesquisável e editável.
+O `gImageReader` é uma aplicação de código aberto que oferece uma _interface_ amigável para a extração de texto de imagens ou arquivos `.pdf`. Ele utiliza tecnologias de reconhecimento óptico de caracteres (OCR) para digitalizar documentos e converter o texto contido neles em formato editável. Com recursos como suporte a vários idiomas e opções de formatação, o gImageReader é uma ferramenta útil para transformar documentos digitalizados em texto pesquisável e editável.
 
 ### `translate-shell`
 
@@ -28,7 +28,7 @@ O `pdftotext` é uma ferramenta de linha de comando, geralmente parte do pacote 
 
 ### `pdfimages`
 
-O `pdfimages` é uma ferramenta para extrair imagens de arquivos PDF. Caso seu PDF contenha imagens e você queira extraí-las, pode ser útil antes de uma conversão com OCR, como no caso de um PDF digitalizado.
+O `pdfimages` é uma ferramenta para extrair imagens de arquivos PDF. Caso seu PDF contenha imagens e você queira extraí-las, pode ser útil antes de uma conversão com `OCR`, como no caso de um PDF digitalizado.
 
 ### `qpdf`
 
@@ -36,7 +36,11 @@ O `qpdf` é uma ferramenta para manipular arquivos PDF de maneira avançada. Voc
 
 ### `pdfunite`
 
-O `pdfunite` é uma ferramenta de linha de comando, integrante do pacote Poppler, que permite mesclar vários arquivos PDF em um único documento. Basta informar na chamada os arquivos de entrada e o nome do PDF de saída. É ideal para scripts e fluxos de trabalho automatizados de organização e consolidação de documentos.
+O `pdfunite` é uma ferramenta de linha de comando, integrante do pacote `poppler`, que permite mesclar vários arquivos PDF em um único documento. Basta informar na chamada os arquivos de entrada e o nome do PDF de saída. É ideal para scripts e fluxos de trabalho automatizados de organização e consolidação de documentos.
+
+### `ocrmypdf`
+
+O `ocrmypdf` é uma ferramenta de linha de comando que pega um `PDF`, aplica `OCR` nas páginas que estão como imagem ou digitalização, e gera um novo `PDF` pesquisável, normalmente preservando o visual original. Na prática, ele usa motores como `tesseract` por baixo, insere uma camada de texto reconhecido sobre as páginas e facilita muito extrair conteúdo de apostilas, _scans_ e _slides_ sem precisar fazer `OCR` manual página por página. 
 
 **ATENÇÃO**: Você pode utilizar o `pdftotext` e/ou o `tesseract` em arquivos `.pdf` para converter em `.txt` e depois traduzir para o português brasileiro com os comandos do `translate-shell` que serão apresentados depois do passo a passo de como instalar o `translate-shell`.
 
@@ -576,7 +580,7 @@ Aqui está uma abordagem simplificada de como você poderia fazer isso, combinan
     rm -rf pagina_${nome_base}*
     ```
 
-Lembre-se, o `Tesseract` entra em jogo se você precisar fazer OCR nas imagens para extrair texto delas, mas isso contradiz a intenção de tornar o texto não selecionável. Se o objetivo é apenas criar um PDF com texto não selecionável, as etapas acima (sem envolver o `Tesseract`) são suficientes.
+Lembre-se, o `Tesseract` entra em jogo se você precisar fazer `OCR` nas imagens para extrair texto delas, mas isso contradiz a intenção de tornar o texto não selecionável. Se o objetivo é apenas criar um PDF com texto não selecionável, as etapas acima (sem envolver o `Tesseract`) são suficientes.
 
 ## Referências
 
