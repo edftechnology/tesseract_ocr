@@ -45,7 +45,7 @@ O `pdfunite` é uma ferramenta de linha de comando, integrante do pacote Poppler
 
 Para configurar/instalar/usar o `tesseract OCR` no `Linux Ubuntu`, você pode seguir estes passos:
 
-1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`    
+1. Abrir o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`    
 
 2. Certifique-se de que seu sistema esteja limpo e atualizado.
 
@@ -180,7 +180,7 @@ Para instalar o suporte ao idioma, por exemplo, russo no `gImageReader` para rec
 
 Para configurar/instalar/usar o `gImageReader` no `Linux Ubuntu` sem precisar digitar linha por linha, você pode seguir estas etapas:
 
-1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
+1. Abrir o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
 
 2. Digite o seguinte comando e pressione `Enter`:
 
